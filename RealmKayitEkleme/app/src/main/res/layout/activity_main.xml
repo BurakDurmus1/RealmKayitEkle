@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı Adını Giriniz"
+        android:id="@+id/editTextKullanici"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="İsminizi Giriniz"
+        android:id="@+id/editTextIsim"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifrenizi Giriniz"
+        android:inputType="textPassword"
+        android:id="@+id/editTextSifre"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/cinsiyetGroup"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="Erkek"
+            android:id="@+id/erkekRadio"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="Kadın"
+            android:id="@+id/kadinRadio"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol"
+        android:id="@+id/kayitolButon"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Güncelle"
+        android:id="@+id/guncelleButon"/>
+</LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview"
+        android:clickable="true"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
